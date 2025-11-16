@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f4f6;
+}
+
+/* Dark Mode Support */
+html.dark body {
+    background-color: #1f2937;
+    color: #f3f4f6;
+}
+
+html.dark .bg-white {
+    background-color: #374151;
+    color: #f3f4f6;
+}
+
+html.dark .bg-gray-50,
+html.dark .bg-gray-100 {
+    background-color: #4b5563;
+    color: #f3f4f6;
+}
+
+html.dark .bg-gray-100 {
+    background-color: #4b5563;
+}
+
+html.dark .text-gray-500,
+html.dark .text-gray-600,
+html.dark .text-gray-700,
+html.dark .text-gray-800 {
+    color: #d1d5db;
+}
+
+html.dark .border-gray-300,
+html.dark .border-gray-200 {
+    border-color: #4b5563;
+}
+
+html.dark #app-modal .bg-white {
+    background-color: #374151;
+}
+
+html.dark #app-modal .text-gray-600 {
+    color: #d1d5db;
+}
+
+html.dark #app-modal .text-gray-800 {
+    color: #f3f4f6;
+}
+
+html.dark .bg-gray-900 {
+    background-color: #111827;
+}
+
+html.dark .text-yellow-900 {
+    color: #fef08a;
+}
+
+html.dark #test-mode-banner {
+    background-color: #713f12;
+    color: #fef08a;
+}
+
+/* Estilos customizados para melhorar a aparência de botão */
+.btn-primary {
+    transition: all 0.2s;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+}
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.3), 0 4px 6px -4px rgba(16, 185, 129, 0.1);
+}
+
+/* Dark mode para buttons */
+html.dark .btn-primary:hover {
+    box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.5), 0 4px 6px -4px rgba(16, 185, 129, 0.2);
+}
+
+/* NOVO: Estilo para o banner de modo de teste */
+#test-mode-banner {
+    animation: fadeIn 0.5s ease-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
